@@ -1,0 +1,1403 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>البطاقة التقنية | ملتقى آفاق 2026 للقيادة والريادة</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+    :root {
+      --navy-dark: #061020;
+      --navy-royal: #0A192F;
+      --navy-mid: #112240;
+      --gold-light: #F9E498;
+      --gold-main: #D4AF37;
+      --gold-dark: #996515;
+    }
+
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+      background-color: #0f172a;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+    }
+
+    .font-eng {
+      font-family: 'Cinzel', sans-serif;
+      letter-spacing: 0.12em;
+    }
+
+    /* Gradients & Gold Effects */
+    .bg-royal-gradient {
+      background: linear-gradient(145deg, #061020 0%, #0A192F 55%, #152C52 100%);
+    }
+
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+    }
+
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F9E498 0%, #D4AF37 50%, #FBF5B7 85%, #B38728 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .border-gold-metallic {
+      border-color: #D4AF37;
+    }
+
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.28);
+    }
+
+    /* Arabesque Subtle Pattern */
+    .arabesque-bg {
+      background-image: radial-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px),
+                        radial-gradient(rgba(212, 175, 55, 0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+
+    /* A4 Page Container */
+    .a4-page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto 2.5rem auto;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.65);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 850px) {
+      .a4-page {
+        width: 100%;
+        min-height: auto;
+      }
+    }
+
+    /* Parallelogram Slogan Ribbon */
+    .parallelogram-ribbon {
+      transform: skewX(-14deg);
+    }
+    .parallelogram-ribbon > span {
+      display: block;
+      transform: skewX(14deg);
+    }
+
+    /* Diagonal Cut Banners (Inspired by Reference PDF Pages 8 & 9) */
+    .diagonal-banner-right {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
+    }
+    .diagonal-banner-left {
+      clip-path: polygon(0 0, 92% 0, 100% 100%, 0 100%);
+    }
+    .chamfered-box {
+      clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    }
+
+    /* Editable highlight when active */
+    .editable-active [contenteditable="true"] {
+      outline: 1px dashed rgba(212, 175, 55, 0.7);
+      outline-offset: 3px;
+      border-radius: 4px;
+      cursor: text;
+    }
+    .editable-active [contenteditable="true"]:focus {
+      outline: 2px solid #D4AF37;
+      background-color: rgba(212, 175, 55, 0.08);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .a4-page {
+        width: 210mm !important;
+        height: 297mm !important;
+        min-height: 297mm !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        page-break-after: always;
+        break-after: page;
+      }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+</style>
+</head>
+<body class="min-h-screen text-slate-800">
+
+<!-- TOP CONTROL BAR (No Print) -->
+<header class="no-print sticky top-0 z-50 bg-[#061020]/95 backdrop-blur-md border-b border-[#D4AF37]/40 px-4 py-3 text-white shadow-xl">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+<!-- Brand Identity -->
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-gold-gradient flex items-center justify-center text-[#061020] font-black text-xl shadow-md">
+          آ
+</div>
+<div>
+<h1 class="font-bold text-sm md:text-base text-white flex items-center gap-2">
+            البطاقة التقنية — ملتقى آفاق 2026 للقيادة والريادة
+<span class="text-xs px-2 py-0.5 rounded-full bg-[#D4AF37]/20 text-[#F9E498] border border-[#D4AF37]/40">5 صفحات A4</span>
+</h1>
+<p class="text-xs text-slate-400">انقر على الصور لرفع صورك الخاصة، أو فعّل وضع التعديل لتحرير أي نص مباشرة</p>
+</div>
+</div>
+
+<!-- Mode Switcher & Actions -->
+<div class="flex flex-wrap items-center gap-2">
+<!-- View Mode Tabs -->
+<div class="bg-[#0A192F] p-1 rounded-lg border border-slate-700 flex items-center">
+<button id="btnViewVisual" onclick="switchView('visual')" class="px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-gold-gradient text-[#061020] shadow">
+            🎨 التصميم البصري (Brochure)
+</button>
+<button id="btnViewWireframe" onclick="switchView('wireframe')" class="px-3 py-1.5 rounded-md text-xs font-bold transition-all text-slate-300 hover:text-white">
+            📐 المخطط النصي للمصمم (Wireframe)
+</button>
+</div>
+
+<!-- Quick Page Jump -->
+<select id="pageJumpSelect" onchange="jumpToPage(this.value)" class="bg-[#0A192F] text-xs text-[#F9E498] border border-[#D4AF37]/40 rounded-lg px-2.5 py-2 focus:outline-none">
+<option value="page-1">1. صفحة الغلاف</option>
+<option value="page-2">2. صفحة الفلسفة والهوية</option>
+<option value="page-3">3. صفحة الاستراتيجية والأهداف</option>
+<option value="page-4">4. صفحة خريطة الملتقى والمحاور</option>
+<option value="page-5">5. صفحة صناع التغيير والتواصل</option>
+</select>
+
+<!-- Toggle Edit Mode -->
+<button id="btnEditToggle" onclick="toggleEditMode()" class="px-3 py-2 rounded-lg text-xs font-bold border border-[#D4AF37]/60 text-[#F9E498] hover:bg-[#D4AF37]/15 transition flex items-center gap-1.5">
+<span id="editIcon">✏️</span>
+<span id="editLabel">تفعيل تحرير النصوص</span>
+</button>
+
+<!-- Print / PDF -->
+<button onclick="window.print()" class="px-4 py-2 rounded-lg text-xs font-black bg-gold-gradient text-[#061020] hover:opacity-95 transition shadow-lg flex items-center gap-1.5">
+          🖨️ طباعة / حفظ PDF
+</button>
+</div>
+</div>
+</header>
+
+<!-- Hidden File Input for Image Uploads -->
+<input type="file" id="imageUploader" accept="image/*" class="hidden" onchange="handleImageUpload(event)" />
+
+<!-- ===================================================================== -->
+<!-- VIEW 1: VISUAL DESIGNED BROCHURE (5 A4 PAGES)                         -->
+<!-- ===================================================================== -->
+<main id="visualBrochureContainer" class="py-8 px-2 md:px-6">
+
+<!-- ================================================================= -->
+<!-- PAGE 1: COVER PAGE [صفحة الغلاف]                                   -->
+<!-- ================================================================= -->
+<section id="page-1" class="a4-page bg-royal-gradient text-white relative">
+<!-- Background Atmospheric Layers (Skyline, Sunrise Glow, Golden Path) -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<!-- Sunrise Radial Glow -->
+<div class="absolute top-[42%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] rounded-full bg-amber-400/15 blur-[90px]"></div>
+<div class="absolute top-[15%] right-[10%] w-64 h-64 rounded-full bg-blue-500/10 blur-[70px]"></div>
+<!-- Subtle Islamic Geometric Pattern Overlay -->
+<div class="absolute inset-0 arabesque-bg opacity-60"></div>
+
+<!-- Artistic SVG Background: Algiers Skyline (Maqam Echahid), Mountains & Golden Winding Road -->
+<svg class="absolute bottom-[24%] left-0 w-full h-72 opacity-35" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<!-- Distant Mountains -->
+<path d="M0 240 L120 165 L230 215 L360 150 L500 220 L650 175 L800 220 L800 300 L0 300 Z" fill="#061020" fill-opacity="0.7"/>
+<!-- City Skyline & Maqam Echahid Silhouette on Right -->
+<rect x="540" y="165" width="16" height="65" fill="#D4AF37" fill-opacity="0.35"/>
+<rect x="562" y="145" width="20" height="85" fill="#D4AF37" fill-opacity="0.45"/>
+<rect x="590" y="170" width="14" height="60" fill="#D4AF37" fill-opacity="0.3"/>
+<rect x="615" y="155" width="18" height="75" fill="#D4AF37" fill-opacity="0.4"/>
+<!-- Maqam Echahid Iconic Silhouette -->
+<path d="M680 230 L695 110 L702 95 L709 110 L724 230 Z" fill="url(#goldGradSky)" fill-opacity="0.65"/>
+<path d="M665 230 C675 165 690 130 702 95 C714 130 729 165 739 230" stroke="#F9E498" stroke-width="3" stroke-opacity="0.7" fill="none"/>
+<!-- Golden Winding Horizon Road -->
+<path d="M410 215 Q470 235 420 260 T520 300" stroke="url(#goldGradSky)" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M410 215 Q460 238 405 263 T490 300" stroke="#F9E498" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+<defs>
+<linearGradient id="goldGradSky" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#F9E498"/>
+<stop offset="50%" stop-color="#D4AF37"/>
+<stop offset="100%" stop-color="#996515"/>
+</linearGradient>
+</defs>
+</svg>
+</div>
+
+<!-- 1. TOP HEADER BAR [الجزء العلوي - الترويسة] -->
+<div class="relative z-10 px-10 pt-9 pb-4 flex items-start justify-between gap-6">
+<!-- Top Right -->
+<div class="text-right max-w-[240px]">
+<p contenteditable="false" class="text-[#F9E498] font-bold text-sm leading-relaxed">ملتقى تكويني وتثقيفي</p>
+<p contenteditable="false" class="text-slate-200 text-xs leading-relaxed">بمشاركة نخبة من كبار المدربين والخبراء من داخل وخارج الجزائر</p>
+<div class="mt-2 flex items-center gap-1">
+<div class="h-[1px] flex-1 bg-gradient-to-l from-[#D4AF37] to-transparent"></div>
+<span class="text-[#D4AF37] text-xs">✦</span>
+<div class="h-[1px] flex-1 bg-gradient-to-r from-[#D4AF37] to-transparent"></div>
+</div>
+</div>
+
+<!-- Center Organization Mini Tag -->
+<div class="hidden sm:flex flex-col items-center">
+<div class="px-4 py-1 rounded-full border border-[#D4AF37]/40 bg-[#0A192F]/80 text-[11px] text-[#F9E498] tracking-wider">
+            ALGIERS • DECEMBER 2026
+</div>
+</div>
+
+<!-- Top Left -->
+<div class="text-left max-w-[220px]">
+<p contenteditable="false" class="text-[#F9E498] font-bold text-sm leading-relaxed">معاً ..</p>
+<p contenteditable="false" class="text-slate-200 text-xs leading-relaxed">نصنع قيادة ونبني مستقبل أفضل</p>
+<div class="mt-2 flex items-center gap-1">
+<div class="h-[1px] flex-1 bg-gradient-to-l from-[#D4AF37] to-transparent"></div>
+<span class="text-[#D4AF37] text-xs">✦</span>
+<div class="h-[1px] flex-1 bg-gradient-to-r from-[#D4AF37] to-transparent"></div>
+</div>
+</div>
+</div>
+
+<!-- 2. CENTER BRANDING & EMBLEM [الجزء الأوسط - الكتلة المركزية للعلامة] -->
+<div class="relative z-10 px-10 flex-1 flex flex-col items-center justify-center text-center -mt-4">
+<!-- 3D Emblem Icon (Golden Leader Reaching Star + Rising Bars) -->
+<div class="relative w-36 h-36 mb-2 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-[#D4AF37]/15 blur-xl"></div>
+<svg class="w-36 h-36 drop-shadow-[0_10px_15px_rgba(0,0,0,0.6)]" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Rising Blue Bars -->
+<rect x="62" y="92" width="12" height="42" rx="2" fill="url(#blueBar)"/>
+<rect x="80" y="74" width="12" height="60" rx="2" fill="url(#blueBar)"/>
+<rect x="98" y="54" width="12" height="80" rx="2" fill="url(#blueBar)"/>
+<!-- Rising White/Silver Arrow -->
+<path d="M52 128 C75 112 96 86 116 38" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+<path d="M105 42 L118 33 L122 49" fill="#E2E8F0"/>
+<!-- Golden Leader Figure & Arc -->
+<path d="M32 95 C46 52 85 38 112 34" stroke="url(#goldMain)" stroke-width="3" stroke-linecap="round"/>
+<circle cx="82" cy="40" r="9" fill="url(#goldMain)"/>
+<path d="M56 58 C72 56 88 52 108 26 C95 54 88 74 74 102 C78 78 72 66 56 58 Z" fill="url(#goldMain)"/>
+<!-- Top Shining Star -->
+<polygon points="115,12 118,20 127,20 120,25 123,33 115,28 107,33 110,25 103,20 112,20" fill="#FCF6BA"/>
+<defs>
+<linearGradient id="goldMain" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#FCF6BA"/>
+<stop offset="50%" stop-color="#D4AF37"/>
+<stop offset="100%" stop-color="#996515"/>
+</linearGradient>
+<linearGradient id="blueBar" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#60A5FA"/>
+<stop offset="100%" stop-color="#1E3A8A"/>
+</linearGradient>
+</defs>
+</svg>
+</div>
+
+<!-- Main Forum Title -->
+<h1 contenteditable="false" class="text-5xl md:text-6xl font-black tracking-tight leading-none mb-2 drop-shadow-lg">
+<span class="text-white">ملتقى </span>
+<span class="text-gold-gradient">آفاق</span>
+</h1>
+
+<!-- Year with side lines -->
+<div class="flex items-center justify-center gap-4 w-72 my-1">
+<div class="h-[2px] flex-1 bg-gradient-to-l from-[#D4AF37] to-transparent"></div>
+<span contenteditable="false" class="text-2xl font-black text-[#F9E498] tracking-widest">2026</span>
+<div class="h-[2px] flex-1 bg-gradient-to-r from-[#D4AF37] to-transparent"></div>
+</div>
+
+<h2 contenteditable="false" class="text-2xl md:text-3xl font-extrabold text-white mt-1 mb-4 tracking-wide">
+          للقيادة والريادة
+</h2>
+
+<!-- Parallelogram Golden Slogan Ribbon -->
+<div class="parallelogram-ribbon bg-gold-gradient px-10 py-2.5 shadow-xl border border-white/30 mb-5">
+<span contenteditable="false" class="text-[#061020] font-black text-lg md:text-xl tracking-wide">
+            من الوعي... إلى صناعة المستقبل
+</span>
+</div>
+
+<!-- Document Title Badge (Inspired by Reference PDF Page 1) -->
+<div class="bg-[#0A192F]/90 border border-[#D4AF37]/60 rounded-xl px-8 py-3 shadow-lg gold-glow mb-4">
+<p contenteditable="false" class="text-lg font-extrabold text-white">البطاقة التقنية للملتقى</p>
+<p contenteditable="false" class="font-eng text-[11px] text-[#F9E498] font-bold mt-0.5">TECHNICAL SHEET FOR THE FORUM</p>
+</div>
+
+<!-- Visual Props Row: Compass & Notebook + 4 Core Pillars from Poster -->
+<div class="w-full grid grid-cols-12 gap-4 items-center mt-2">
+<!-- Right: Compass & Notebook Visual Card -->
+<div class="col-span-5 bg-[#061020]/80 border border-[#D4AF37]/40 rounded-xl p-3.5 text-right flex items-center gap-3 shadow-inner">
+<div class="w-14 h-14 rounded-full bg-gold-gradient p-0.5 flex-shrink-0 flex items-center justify-center shadow-md">
+<div class="w-full h-full rounded-full bg-[#0A192F] flex items-center justify-center text-[#F9E498]">
+<!-- Compass SVG -->
+<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+<circle cx="12" cy="12" r="10"/>
+<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#D4AF37"/>
+</svg>
+</div>
+</div>
+<div>
+<p class="text-[11px] text-slate-300">بوصلة التحول الاستراتيجي</p>
+<p contenteditable="false" class="text-sm font-black text-gold-gradient tracking-wider mt-0.5">رؤية • خطة • إنجاز</p>
+<p class="text-[10px] text-slate-400 mt-0.5">خريطة طريق نحو الامتياز</p>
+</div>
+</div>
+
+<!-- Left: 4 Quick Themes Badges from Poster -->
+<div class="col-span-7 grid grid-cols-2 gap-2 text-right">
+<div class="flex items-center gap-2 bg-[#0A192F]/85 border border-[#D4AF37]/30 rounded-lg px-2.5 py-1.5">
+<span class="w-7 h-7 rounded-full border border-[#D4AF37] flex items-center justify-center text-xs text-[#F9E498] flex-shrink-0">🧠</span>
+<span contenteditable="false" class="text-[11px] font-bold text-slate-100 leading-tight">تطوير الذات والقيادة</span>
+</div>
+<div class="flex items-center gap-2 bg-[#0A192F]/85 border border-[#D4AF37]/30 rounded-lg px-2.5 py-1.5">
+<span class="w-7 h-7 rounded-full border border-[#D4AF37] flex items-center justify-center text-xs text-[#F9E498] flex-shrink-0">📈</span>
+<span contenteditable="false" class="text-[11px] font-bold text-slate-100 leading-tight">الاستراتيجية والريادة</span>
+</div>
+<div class="flex items-center gap-2 bg-[#0A192F]/85 border border-[#D4AF37]/30 rounded-lg px-2.5 py-1.5">
+<span class="w-7 h-7 rounded-full border border-[#D4AF37] flex items-center justify-center text-xs text-[#F9E498] flex-shrink-0">👥</span>
+<span contenteditable="false" class="text-[11px] font-bold text-slate-100 leading-tight">التدريب والكوتشينغ والمرافقة</span>
+</div>
+<div class="flex items-center gap-2 bg-[#0A192F]/85 border border-[#D4AF37]/30 rounded-lg px-2.5 py-1.5">
+<span class="w-7 h-7 rounded-full border border-[#D4AF37] flex items-center justify-center text-xs text-[#F9E498] flex-shrink-0">🤝</span>
+<span contenteditable="false" class="text-[11px] font-bold text-slate-100 leading-tight">فرص التواصل والشراكات المهنية</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 3. BOTTOM LOGISTICS ARCH & SPEAKERS BAR [الجزء السفلي - شريط المعلومات اللوجستية والمدربين] -->
+<div class="relative z-10 mt-4">
+<!-- Golden Curved Arch Top Border -->
+<div class="h-3 bg-gold-gradient rounded-t-[50%] mx-4 shadow-lg"></div>
+<div class="bg-[#061020] border-t-2 border-[#D4AF37] px-8 pt-5 pb-6 arabesque-bg">
+<!-- 3 Logistics Columns -->
+<div class="grid grid-cols-3 gap-4 text-center pb-5 border-b border-[#D4AF37]/25">
+<!-- Date -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full border border-[#D4AF37] bg-[#0A192F] flex items-center justify-center text-[#F9E498] mb-1.5 shadow">
+                📅
+</div>
+<p contenteditable="false" class="text-sm font-black text-white">18 - 19 ديسمبر 2026</p>
+<p contenteditable="false" class="text-[11px] text-[#F9E498]">مدة الملتقى: يومان تدريبيان</p>
+</div>
+
+<!-- Venue -->
+<div class="flex flex-col items-center border-x border-[#D4AF37]/25 px-2">
+<div class="w-10 h-10 rounded-full border border-[#D4AF37] bg-[#0A192F] flex items-center justify-center text-[#F9E498] mb-1.5 shadow">
+                📍
+</div>
+<p contenteditable="false" class="text-sm font-black text-white">فندق بركات - براقي، الجزائر</p>
+<p contenteditable="false" class="text-[11px] text-[#F9E498]">فندق 4 نجوم ★★★★ | القاعة الرئيسية</p>
+</div>
+
+<!-- Format -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full border border-[#D4AF37] bg-[#0A192F] flex items-center justify-center text-[#F9E498] mb-1.5 shadow">
+                🏛️
+</div>
+<p contenteditable="false" class="text-sm font-black text-white">ملتقى حضوري تفاعلي</p>
+<p contenteditable="false" class="text-[11px] text-[#F9E498]">يجمع التدريب والحوار والتواصل المهني</p>
+</div>
+</div>
+
+<!-- Mini Speakers Strip (Inspired by Reference PDF Page 1 Footer) -->
+<div class="pt-4 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold text-[#F9E498]">نخبة المتحدثين:</span>
+<div class="flex items-center gap-3">
+<span contenteditable="false" class="text-xs bg-[#0A192F] border border-[#D4AF37]/50 px-2.5 py-1 rounded-full text-white">أ. عادل الشبل</span>
+<span contenteditable="false" class="text-xs bg-[#0A192F] border border-[#D4AF37]/50 px-2.5 py-1 rounded-full text-white">د. أمين فركول</span>
+<span contenteditable="false" class="text-xs bg-[#0A192F] border border-[#D4AF37]/50 px-2.5 py-1 rounded-full text-white">د. محمد مايمون</span>
+<span contenteditable="false" class="text-xs bg-[#0A192F] border border-[#D4AF37]/50 px-2.5 py-1 rounded-full text-white">د. أمين السلمي</span>
+</div>
+</div>
+<div class="bg-gold-gradient text-[#061020] font-black text-xs px-4 py-1.5 rounded-full shadow">
+              سجل الآن  Left ❯
+</div>
+</div>
+
+<!-- Keywords Footer Bar -->
+<div class="mt-4 pt-3 border-t border-slate-800 text-center">
+<p contenteditable="false" class="text-xs font-bold text-[#F9E498] tracking-wider">
+              الامتياز &nbsp;|&nbsp; آفاق &nbsp;|&nbsp; المستقبل &nbsp;|&nbsp; التحول &nbsp;|&nbsp; التغيير &nbsp;|&nbsp; الريادة &nbsp;|&nbsp; القيادة
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================================================================= -->
+<!-- PAGE 2: PHILOSOPHY PAGE [صفحة الفلسفة - الرؤية والرسالة وبيئة الانعقاد] -->
+<!-- ================================================================= -->
+<section id="page-2" class="a4-page bg-[#F8FAFC] text-slate-800">
+<!-- Standard Internal Header -->
+<div class="bg-[#0A192F] text-white px-8 py-3.5 border-b-4 border-[#D4AF37] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-gold-gradient text-[#061020] font-black flex items-center justify-center text-sm">آ</span>
+<span class="font-bold text-sm text-[#F9E498]">ملتقى آفاق 2026 للقيادة والريادة</span>
+<span class="text-slate-400 text-xs">| من الوعي... إلى صناعة المستقبل</span>
+</div>
+<span class="font-eng text-[10px] text-[#D4AF37]">FORUM PHILOSOPHY & IDENTITY</span>
+</div>
+
+<!-- Page Body Grid (Right Sidebar + Main Content Area, like Page 2 of Ref PDF) -->
+<div class="p-8 flex-1 flex flex-col justify-between gap-6">
+<div class="grid grid-cols-12 gap-6 items-stretch">
+<!-- القسم الأول: الشريط الجانبي الأيمن (معلومات سريعة) -->
+<div class="col-span-4 bg-royal-gradient text-white rounded-2xl p-5 border-2 border-[#D4AF37] shadow-lg flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -bottom-10 -left-10 w-32 h-32 rounded-full bg-[#D4AF37]/10 blur-xl pointer-events-none"></div>
+<div>
+<div class="inline-block bg-gold-gradient text-[#061020] font-black text-xs px-3 py-1 rounded-md mb-4">
+                بطاقة تعريفية سريعة
+</div>
+
+<!-- Date Item -->
+<div class="mb-4 pb-4 border-b border-slate-700/80">
+<div class="flex items-center gap-2 text-[#F9E498] text-xs font-bold mb-1">
+<span>📅</span>
+<span>تاريخ الملتقى</span>
+</div>
+<p contenteditable="false" class="text-base font-black text-white">18 و 19 ديسمبر 2026</p>
+<p contenteditable="false" class="text-[11px] text-slate-300 mt-0.5">يومان تدريبيان متكاملان</p>
+</div>
+
+<!-- Venue Item -->
+<div class="mb-4 pb-4 border-b border-slate-700/80">
+<div class="flex items-center gap-2 text-[#F9E498] text-xs font-bold mb-1">
+<span>🏨</span>
+<span>مكان الملتقى</span>
+</div>
+<p contenteditable="false" class="text-sm font-black text-white">فندق بركات (BARKAT HOTEL)</p>
+<p contenteditable="false" class="text-xs text-[#F9E498] mt-0.5">براقي، الجزائر | فندق 4 نجوم ★★★★</p>
+</div>
+
+<!-- Format Item -->
+<div>
+<div class="flex items-center gap-2 text-[#F9E498] text-xs font-bold mb-1">
+<span>🎯</span>
+<span>طبيعة الحضور والصيغة</span>
+</div>
+<p contenteditable="false" class="text-xs text-slate-200 leading-relaxed">
+                  ملتقى حضوري تفاعلي يجمع التدريب، الحوار، والتواصل المهني (Networking).
+</p>
+</div>
+</div>
+
+<div class="mt-4 pt-3 border-t border-[#D4AF37]/30 text-center">
+<span class="text-[10px] text-[#F9E498] tracking-widest uppercase font-eng">AFAQ LEADERSHIP 2026</span>
+</div>
+</div>
+
+<!-- القسم الثاني: التعريف بالملتقى وفلسفة الريادة (بطاقتان مرقمتان ① و ②) -->
+<div class="col-span-8 flex flex-col justify-between">
+<div>
+<h2 contenteditable="false" class="text-2xl font-black text-[#0A192F] flex items-center gap-2">
+<span>1. التعريف بالملتقى وفلسفته</span>
+<span class="font-eng text-xs text-[#996515] font-bold mt-1">| INTRODUCTION</span>
+</h2>
+<div class="w-24 h-1 bg-gold-gradient rounded mt-1.5 mb-4"></div>
+</div>
+
+<div class="space-y-4">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-r-4 border-r-[#0A192F] shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-[#0A192F] text-[#F9E498] font-black text-lg flex items-center justify-center flex-shrink-0 border-2 border-[#D4AF37]">
+                  1
+</div>
+<div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1 flex items-center gap-1.5">
+<span>🌟</span> منصة التحول وصناعة الأثر المستدام
+</h3>
+<p contenteditable="false" class="text-xs text-slate-700 leading-relaxed text-justify">
+<strong>ملتقى آفاق 2026 للقيادة والريادة</strong> منصة معرفية وتدريبية تجمع مدربين وخبراء ومهتمين بتطوير الإنسان والارتقاء بالأداء الشخصي والمهني والمجتمعي. ينطلق الملتقى من <strong>الوعي</strong> بوصفه نقطة بداية للتحول، ويتجه نحو بناء رؤية أوضح، وقرارات أكثر اتساقاً، وممارسات تصنع قيمة وأثراً مستداماً.
+</p>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-r-4 border-r-[#D4AF37] shadow-sm flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-full bg-gold-gradient text-[#061020] font-black text-lg flex items-center justify-center flex-shrink-0 border-2 border-[#0A192F]">
+                  2
+</div>
+<div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1 flex items-center gap-1.5">
+<span>🚀</span> المفهوم الشامل للريادة
+</h3>
+<p contenteditable="false" class="text-xs text-slate-700 leading-relaxed text-justify">
+                    تُفهم <strong>الريادة</strong> في هذا الملتقى بمعناها الأوسع: <strong>التقدم، والسبق، والارتقاء، وصناعة القيمة</strong> في حياة الفرد ومهنته ومجتمعه، ولا تقتصر على ريادة الأعمال التجارية فحسب.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- القسم الثالث: الرؤية والرسالة (القلب البصري للصفحة - Grid 2 Columns مع أيقونات متداخلة) -->
+<div class="pt-4">
+<div class="grid grid-cols-2 gap-6 pt-5">
+<!-- Vision Card -->
+<div class="relative bg-royal-gradient text-white rounded-2xl p-6 pt-9 border-2 border-[#D4AF37] shadow-lg">
+<!-- Overlapping Circular Icon Badge -->
+<div class="absolute -top-6 right-6 w-12 h-12 rounded-full bg-gold-gradient p-0.5 shadow-lg flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-[#0A192F] flex items-center justify-center text-xl" title="أيقونة البوصلة والعين البصيرة">
+                  🧭
+</div>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 contenteditable="false" class="text-lg font-black text-[#F9E498]">2. الرؤية</h3>
+<span class="font-eng text-[10px] text-[#D4AF37] font-bold">OUR VISION</span>
+</div>
+<p contenteditable="false" class="text-xs font-bold text-amber-200 mb-2">
+                «نحو جيلٍ يقود ذاته ويصنع مستقبله»
+</p>
+<p contenteditable="false" class="text-xs text-slate-200 leading-relaxed text-justify">
+                الإسهام في بناء أفراد أكثر وعياً وقدرة على قيادة ذواتهم ومساراتهم، وتحويل المعرفة إلى ممارسة، والطموح إلى اتجاه، والجهد إلى أثر.
+</p>
+</div>
+
+<!-- Mission Card -->
+<div class="relative bg-royal-gradient text-white rounded-2xl p-6 pt-9 border-2 border-[#D4AF37] shadow-lg">
+<!-- Overlapping Circular Icon Badge -->
+<div class="absolute -top-6 right-6 w-12 h-12 rounded-full bg-gold-gradient p-0.5 shadow-lg flex items-center justify-center">
+<div class="w-full h-full rounded-full bg-[#0A192F] flex items-center justify-center text-xl" title="أيقونة خريطة الطريق والتفاعل المهني">
+                  🗺️
+</div>
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 contenteditable="false" class="text-lg font-black text-[#F9E498]">3. الرسالة</h3>
+<span class="font-eng text-[10px] text-[#D4AF37] font-bold">OUR MISSION</span>
+</div>
+<p contenteditable="false" class="text-xs font-bold text-amber-200 mb-2">
+                «تجربةٌ تفاعلية متكاملة ترسم ملامح الامتياز»
+</p>
+<p contenteditable="false" class="text-xs text-slate-200 leading-relaxed text-justify">
+                توفير تجربة تفاعلية تجمع الخبرة والتدريب والحوار والتواصل المهني، وتمنح المشاركين خريطة طريق أولية نحو الامتياز الشخصي والمهني والمجتمعي.
+</p>
+</div>
+</div>
+</div>
+
+<!-- القسم الرابع: الشريط البصري لبيئة الانعقاد (فندق بركات - 3-Photo Collage كما في الصفحة 3 من المرجع) -->
+<div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h4 contenteditable="false" class="text-sm font-extrabold text-[#0A192F] flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#D4AF37]"></span>
+              بيئة الانعقاد: فندق بركات (BARKAT HOTEL) — براقي، الجزائر (4 نجوم ★★★★)
+</h4>
+<span class="no-print text-[11px] text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">
+              💡 انقر على أي إطار لرفع صور الفندق المرفقة
+</span>
+</div>
+
+<div class="grid grid-cols-3 gap-3.5">
+<!-- Hotel Photo 1: Reception -->
+<div onclick="triggerImageUpload('hotel-img-1')" class="group cursor-pointer relative h-36 rounded-xl overflow-hidden border-2 border-[#0A192F] shadow">
+<img id="hotel-img-1" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="بهو واستقبال فندق بركات" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+<div class="absolute inset-0 bg-gradient-to-t from-[#061020]/90 via-transparent to-transparent flex flex-col justify-end p-2.5">
+<span contenteditable="false" class="text-[11px] font-bold text-[#F9E498]">بهو الاستقبال الرئيسي</span>
+<span contenteditable="false" class="text-[10px] text-white">BARKAT HOTEL RECEPTION</span>
+</div>
+</div>
+
+<!-- Hotel Photo 2: VIP Lounge -->
+<div onclick="triggerImageUpload('hotel-img-2')" class="group cursor-pointer relative h-36 rounded-xl overflow-hidden border-2 border-[#D4AF37] shadow">
+<img id="hotel-img-2" src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="صالات الجلوس والتشبيك" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+<div class="absolute inset-0 bg-gradient-to-t from-[#061020]/90 via-transparent to-transparent flex flex-col justify-end p-2.5">
+<span contenteditable="false" class="text-[11px] font-bold text-[#F9E498]">فضاءات الحوار والتواصل المهني</span>
+<span contenteditable="false" class="text-[10px] text-white">VIP NETWORKING LOUNGE</span>
+</div>
+</div>
+
+<!-- Hotel Photo 3: Dining & Hospitality -->
+<div onclick="triggerImageUpload('hotel-img-3')" class="group cursor-pointer relative h-36 rounded-xl overflow-hidden border-2 border-[#0A192F] shadow">
+<img id="hotel-img-3" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="مطعم وضيافة الفندق" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+<div class="absolute inset-0 bg-gradient-to-t from-[#061020]/90 via-transparent to-transparent flex flex-col justify-end p-2.5">
+<span contenteditable="false" class="text-[11px] font-bold text-[#F9E498]">قاعات الضيافة والإطعام الفاخر</span>
+<span contenteditable="false" class="text-[10px] text-white">4-STAR HOSPITALITY</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Standard Internal Footer -->
+<div class="bg-[#0A192F] text-white px-8 py-2.5 flex items-center justify-between text-xs border-t border-[#D4AF37]/40">
+<span>ملتقى آفاق 2026 للقيادة والريادة | البطاقة التقنية</span>
+<span class="w-6 h-6 rounded-full bg-gold-gradient text-[#061020] font-black flex items-center justify-center">2</span>
+</div>
+</section>
+
+<!-- ================================================================= -->
+<!-- PAGE 3: STRATEGY PAGE [صفحة الاستراتيجية - الأهداف والغايات]       -->
+<!-- ================================================================= -->
+<section id="page-3" class="a4-page bg-[#F8FAFC] text-slate-800">
+<!-- Standard Internal Header -->
+<div class="bg-[#0A192F] text-white px-8 py-3.5 border-b-4 border-[#D4AF37] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-gold-gradient text-[#061020] font-black flex items-center justify-center text-sm">آ</span>
+<span class="font-bold text-sm text-[#F9E498]">ملتقى آفاق 2026 للقيادة والريادة</span>
+<span class="text-slate-400 text-xs">| من الوعي... إلى صناعة المستقبل</span>
+</div>
+<span class="font-eng text-[10px] text-[#D4AF37]">STRATEGIC OBJECTIVES & OUTCOMES</span>
+</div>
+
+<div class="p-8 flex-1 flex flex-col justify-between gap-6">
+<!-- القسم الأول: الأهداف الاستراتيجية الستة (Grid 3x2) -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<h2 contenteditable="false" class="text-2xl font-black text-[#0A192F]">
+                4. الأهداف الاستراتيجية للملتقى
+</h2>
+<p contenteditable="false" class="text-xs text-slate-600 mt-0.5">
+                منظومة أهداف متكاملة تسعى إلى إحداث نقلة نوعية في وعي المشارك وممارسته القيادية والمهنية:
+</p>
+</div>
+<span class="font-eng text-xs font-bold text-[#996515] bg-amber-50 px-3 py-1 rounded border border-amber-200">
+              STRATEGIC OBJECTIVES
+</span>
+</div>
+<div class="w-24 h-1 bg-gold-gradient rounded mb-5"></div>
+
+<!-- 3x2 Cards Grid -->
+<div class="grid grid-cols-3 gap-4">
+<!-- Objective 01 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#D4AF37] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">🧭</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">01</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">تعميق الوعي الذاتي</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  تعزيز الوعي بالذات وبالاختيارات والمسؤولية الشخصية بوصفها نقطة الارتكاز لكل تحول.
+</p>
+</div>
+</div>
+
+<!-- Objective 02 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#0A192F] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">👑</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">02</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">تطوير الكفاءة القيادية</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  تطوير مفاهيم قيادة الذات والقيادة المجتمعية وصناعة القرار الرشيد في بيئات متغيرة.
+</p>
+</div>
+</div>
+
+<!-- Objective 03 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#D4AF37] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">⚙️</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">03</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">أجرأة الطموحات</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  ربط الرؤية والطموح بخطوات عملية قابلة للتطبيق والتنفيذ المنهجي على أرض الواقع.
+</p>
+</div>
+</div>
+
+<!-- Objective 04 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#0A192F] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">💎</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">04</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">إعادة تعريف الريادة</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  استكشاف مفهوم الريادة بوصفها مبادرة وصناعة قيمة وأثر مستدام في الحياة والمهنة والمجتمع.
+</p>
+</div>
+</div>
+
+<!-- Objective 05 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#D4AF37] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">🤝</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">05</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">التشبيك وبناء الشراكات</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  فتح مساحة لتبادل الخبرات وبناء علاقات وشراكات مهنية فاعلة بين الخبراء والمؤسسات.
+</p>
+</div>
+</div>
+
+<!-- Objective 06 -->
+<div class="bg-white rounded-xl p-4 border border-slate-200 border-t-4 border-t-[#0A192F] shadow-sm hover:shadow-md transition flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2.5">
+<span class="w-9 h-9 rounded-lg bg-[#0A192F] text-[#F9E498] flex items-center justify-center text-lg">🏅</span>
+<span class="text-xl font-black text-[#D4AF37]/50 font-eng">06</span>
+</div>
+<h3 contenteditable="false" class="font-extrabold text-sm text-[#0A192F] mb-1.5">مَأْسَسَة مهن التمكين</h3>
+<p contenteditable="false" class="text-xs text-slate-600 leading-relaxed">
+                  التعريف بالتدريب والكوتشينغ والمرافقة بوصفها مسارات مهنية تتطلب كفاءة وأخلاقيات وممارسة مسؤولة.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- القسم الثاني: الغايات والنتائج المنتظرة للمشارك + طبيعة التجربة -->
+<div class="bg-royal-gradient text-white rounded-2xl p-6 border-2 border-[#D4AF37] shadow-xl arabesque-bg">
+<div class="grid grid-cols-2 gap-8">
+<!-- العمود الأيمن: النتائج المنتظرة للمشارك -->
+<div class="border-l border-[#D4AF37]/30 pl-6">
+<div class="inline-block bg-gold-gradient text-[#061020] font-black text-xs px-3 py-1 rounded mb-2">
+                العائد المباشر على المشارك
+</div>
+<h3 contenteditable="false" class="text-lg font-black text-[#F9E498] mb-3">
+                النتائج المنتظرة للمشارك (ماذا ستحصد؟)
+</h3>
+<ul class="space-y-3 text-xs text-slate-100">
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">📍</span>
+<span contenteditable="false" class="leading-relaxed">وضوح أكبر في فهم موقعه الحالي والاتجاه الذي يريد الوصول إليه.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">🧰</span>
+<span contenteditable="false" class="leading-relaxed">أفكار وأدوات عملية تدعم قيادة الذات والتخطيط الشخصي والمهني.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">🌅</span>
+<span contenteditable="false" class="leading-relaxed">فهم أوسع للريادة وصناعة القيمة والأثر.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">🌐</span>
+<span contenteditable="false" class="leading-relaxed">فرص للتعارف المهني وتبادل الخبرات واستكشاف التعاون.</span>
+</li>
+</ul>
+</div>
+
+<!-- العمود الأيسر: طبيعة التجربة -->
+<div>
+<div class="inline-block bg-[#112240] text-[#F9E498] border border-[#D4AF37]/50 font-bold text-xs px-3 py-1 rounded mb-2">
+                منهجية التنفيذ
+</div>
+<h3 contenteditable="false" class="text-lg font-black text-[#F9E498] mb-3">
+                طبيعة التجربة داخل الملتقى
+</h3>
+<ul class="space-y-3 text-xs text-slate-100">
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">🎤</span>
+<span contenteditable="false" class="leading-relaxed">مداخلات معرفية وتدريبية يقدمها مدربون وخبراء.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">💬</span>
+<span contenteditable="false" class="leading-relaxed">جلسات مناقشة وحوار بحسب البرنامج المعتمد.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">☕</span>
+<span contenteditable="false" class="leading-relaxed">مساحات للتواصل المهني وتبادل الخبرات وبناء الشراكات.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="w-6 h-6 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37] text-[#F9E498] flex items-center justify-center flex-shrink-0 mt-0.5">📜</span>
+<span contenteditable="false" class="leading-relaxed">كراسة خاصة بالملتقى وشهادة حضور وفق فئة التذكرة.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- شريط الخلاصة الفلسفية أسفل الصفحة -->
+<div class="bg-amber-50/90 border-2 border-[#D4AF37] rounded-2xl p-4 text-center relative shadow-sm">
+<span class="bg-gold-gradient text-[#061020] font-black text-[11px] px-3 py-0.5 rounded-full uppercase tracking-wider">
+            خلاصة فلسفة آفاق 2026
+</span>
+<p contenteditable="false" class="text-sm font-extrabold text-[#0A192F] mt-2 leading-relaxed">
+            «آفاق 2026 ليس مجرد مساحة للاستماع إلى الأفكار، بل تجربة تسعى إلى فتح أسئلة أعمق، وتوسيع الرؤية، وربط <span class="text-[#996515] underline decoration-[#D4AF37]">الوعي بالاختيار</span>، و<span class="text-[#996515] underline decoration-[#D4AF37]">الاختيار بالفعل</span>، و<span class="text-[#996515] underline decoration-[#D4AF37]">الفعل بالأثر</span>.»
+</p>
+</div>
+</div>
+
+<!-- Standard Internal Footer -->
+<div class="bg-[#0A192F] text-white px-8 py-2.5 flex items-center justify-between text-xs border-t border-[#D4AF37]/40">
+<span>ملتقى آفاق 2026 للقيادة والريادة | البطاقة التقنية</span>
+<span class="w-6 h-6 rounded-full bg-gold-gradient text-[#061020] font-black flex items-center justify-center">3</span>
+</div>
+</section>
+
+<!-- ================================================================= -->
+<!-- PAGE 4: FORUM MAP [صفحة خريطة الملتقى - المحاور والفئات المستهدفة]  -->
+<!-- (Inspired by Overlapping Circular Cards in Pages 4 & 5 of Ref PDF) -->
+<!-- ================================================================= -->
+<section id="page-4" class="a4-page bg-[#F8FAFC] text-slate-800">
+<!-- Standard Internal Header -->
+<div class="bg-[#0A192F] text-white px-8 py-3.5 border-b-4 border-[#D4AF37] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-7 h-7 rounded bg-gold-gradient text-[#061020] font-black flex items-center justify-center text-sm">آ</span>
+<span class="font-bold text-sm text-[#F9E498]">ملتقى آفاق 2026 للقيادة والريادة</span>
+<span class="text-slate-400 text-xs">| خريطة المحاور والفئات المستهدفة</span>
+</div>
+<span class="font-eng text-[10px] text-[#D4AF37]">OBJECTIVES & THEMES OF THE FORUM</span>
+</div>
+
+<div class="p-7 flex-1 flex flex-col justify-between gap-4">
+<!-- أولاً: إنفوجرافيك المحاور الرئيسية الخمسة (بطاقات متداخلة الدوائر كما في الصفحتين 4 و5 من الملف المرجعي) -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<h2 contenteditable="false" class="text-xl font-black text-[#0A192F]">
+              5. المحاور الرئيسية للملتقى <span class="text-xs font-bold text-[#996515]">(THE 5 PILLARS)</span>
+</h2>
+<span class="text-[11px] text-slate-500">هيكل البطاقات المتداخلة المعتمد في المرجع البصري</span>
+</div>
+
+<!-- Grid for Pillars 1 to 4 (2x2) + Pillar 5 Full Width -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Pillar 1 -->
+<div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-royal-gradient text-white flex flex-col">
+<div class="h-16 bg-gradient-to-r from-slate-900 via-blue-950 to-amber-900/70 relative flex items-center justify-between px-4">
+<span class="text-[10px] font-bold text-[#F9E498]/80">المحور الأول</span>
+<span class="font-eng text-xs text-white/30 font-black">PILLAR 01</span>
+</div>
+<div class="relative px-4 pt-6 pb-3.5 text-center flex-1">
+<!-- Overlapping Circular Badge -->
+<div class="w-12 h-12 rounded-full bg-[#0A192F] border-4 border-white shadow-lg mx-auto -mt-12 mb-1.5 flex items-center justify-center text-xl">
+                  🧠
+</div>
+<h3 contenteditable="false" class="text-sm font-black text-[#F9E498] mb-1">الوعي وقيادة الذات</h3>
+<p contenteditable="false" class="text-[11px] text-slate-200 leading-relaxed">
+                  فهم الذات، وضوح الاتجاه، المسؤولية، والانتقال من رد الفعل إلى الاختيار الواعي.
+</p>
+</div>
+</div>
+
+<!-- Pillar 2 -->
+<div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-royal-gradient text-white flex flex-col">
+<div class="h-16 bg-gradient-to-r from-blue-950 via-indigo-950 to-amber-800/70 relative flex items-center justify-between px-4">
+<span class="text-[10px] font-bold text-[#F9E498]/80">المحور الثاني</span>
+<span class="font-eng text-xs text-white/30 font-black">PILLAR 02</span>
+</div>
+<div class="relative px-4 pt-6 pb-3.5 text-center flex-1">
+<div class="w-12 h-12 rounded-full bg-[#0A192F] border-4 border-white shadow-lg mx-auto -mt-12 mb-1.5 flex items-center justify-center text-xl">
+                  ⛰️
+</div>
+<h3 contenteditable="false" class="text-sm font-black text-[#F9E498] mb-1">القيادة والامتياز الشخصي والمهني</h3>
+<p contenteditable="false" class="text-[11px] text-slate-200 leading-relaxed">
+                  بناء الطموح، تطوير العقلية القيادية، التخطيط الشخصي والمهني، وتحويل التحديات إلى فرص للنمو.
+</p>
+</div>
+</div>
+
+<!-- Pillar 3 -->
+<div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-royal-gradient text-white flex flex-col">
+<div class="h-16 bg-gradient-to-r from-slate-900 via-teal-950 to-amber-900/70 relative flex items-center justify-between px-4">
+<span class="text-[10px] font-bold text-[#F9E498]/80">المحور الثالث</span>
+<span class="font-eng text-xs text-white/30 font-black">PILLAR 03</span>
+</div>
+<div class="relative px-4 pt-6 pb-3.5 text-center flex-1">
+<div class="w-12 h-12 rounded-full bg-[#0A192F] border-4 border-white shadow-lg mx-auto -mt-12 mb-1.5 flex items-center justify-center text-xl">
+                  💡
+</div>
+<h3 contenteditable="false" class="text-sm font-black text-[#F9E498] mb-1">الريادة وصناعة القيمة</h3>
+<p contenteditable="false" class="text-[11px] text-slate-200 leading-relaxed">
+                  المبادرة، التجديد، وصناعة أثر في المحيط المهني والمجتمعي.
+</p>
+</div>
+</div>
+
+<!-- Pillar 4 -->
+<div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-royal-gradient text-white flex flex-col">
+<div class="h-16 bg-gradient-to-r from-blue-950 via-slate-900 to-amber-800/70 relative flex items-center justify-between px-4">
+<span class="text-[10px] font-bold text-[#F9E498]/80">المحور الرابع</span>
+<span class="font-eng text-xs text-white/30 font-black">PILLAR 04</span>
+</div>
+<div class="relative px-4 pt-6 pb-3.5 text-center flex-1">
+<div class="w-12 h-12 rounded-full bg-[#0A192F] border-4 border-white shadow-lg mx-auto -mt-12 mb-1.5 flex items-center justify-center text-xl">
+                  🤝
+</div>
+<h3 contenteditable="false" class="text-sm font-black text-[#F9E498] mb-1">التدريب والكوتشينغ والمرافقة كمهن</h3>
+<p contenteditable="false" class="text-[11px] text-slate-200 leading-relaxed">
+                  استكشاف فرص الممارسة المهنية وبناء القيمة والتواصل بين المدربين ومراكز التدريب.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Pillar 5: Crowning Full-Width Card -->
+<div class="mt-3.5 rounded-2xl overflow-hidden shadow-md border-2 border-[#D4AF37] bg-royal-gradient text-white">
+<div class="h-12 bg-gradient-to-r from-[#061020] via-amber-900/50 to-[#061020] flex items-center justify-between px-6">
+<span class="text-[11px] font-bold text-[#F9E498]">المحور الخامس (تتويج الرحلة)</span>
+<span class="font-eng text-xs text-[#F9E498]/60 font-black">PILLAR 05 • FUTURE MAKING</span>
+</div>
+<div class="relative px-6 pt-5 pb-3.5 text-center">
+<div class="w-12 h-12 rounded-full bg-gold-gradient text-[#061020] border-4 border-white shadow-lg mx-auto -mt-11 mb-1 flex items-center justify-center text-xl font-black">
+                🚀
+</div>
+<h3 contenteditable="false" class="text-base font-black text-[#F9E498] mb-0.5">من الوعي إلى صناعة المستقبل</h3>
+<p contenteditable="false" class="text-xs text-slate-200">
+                تحويل الرؤى إلى قرارات وخطوات عملية تدعم التغيير المستدام.
+</p>
+</div>
+</div>
+
+<!-- Sub-Tracks Ribbon [شريط التخصصات العلمية الدقيقة] -->
+<div class="mt-3.5 bg-white p-3 rounded-xl border border-slate-200 shadow-sm">
+<p class="text-[11px] font-black text-[#0A192F] mb-2 text-center">
+              المجالات المعرفية الدقيقة المتضمنة في مداخلات الخبراء:
+</p>
+<div class="grid grid-cols-4 gap-2 text-center">
+<div contenteditable="false" class="bg-[#0A192F] text-[#F9E498] border border-[#D4AF37] rounded-full px-2 py-1.5 text-[10px] font-bold flex items-center justify-center">
+                الوعي والإدراك، تنمية الشخصية، مرافقة المؤسسات وعلوم الشخصية
+</div>
+<div contenteditable="false" class="bg-[#0A192F] text-[#F9E498] border border-[#D4AF37] rounded-full px-2 py-1.5 text-[10px] font-bold flex items-center justify-center">
+                الوعي والإدراك والفلسفة
+</div>
+<div contenteditable="false" class="bg-[#0A192F] text-[#F9E498] border border-[#D4AF37] rounded-full px-2 py-1.5 text-[10px] font-bold flex items-center justify-center">
+                التخطيط الاستراتيجي الشخصي والقيادة المجتمعية
+</div>
+<div contenteditable="false" class="bg-gold-gradient text-[#061020] rounded-full px-2 py-1.5 text-[10px] font-black flex items-center justify-center gap-1 shadow">
+<span>🤖</span> التطوير المؤسساتي والذكاء الاصطناعي (AI)
+</div>
+</div>
+</div>
+</div>
+
+<!-- ثانياً: إنفوجرافيك الفئات المستهدفة (5 Connected Nodes) -->
+<div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 contenteditable="false" class="text-base font-black text-[#0A192F]">
+              7. الفئات المستهدفة (لمن صُمم ملتقى آفاق 2026؟)
+</h3>
+<span class="font-eng text-[10px] font-bold text-[#996515]">TARGET AUDIENCE</span>
+</div>
+
+<!-- 5 Connected Infographic Nodes -->
+<div class="relative grid grid-cols-5 gap-2.5 text-center pt-2">
+<!-- Connecting Horizontal Line behind circles -->
+<div class="hidden sm:block absolute top-7 right-10 left-10 h-0.5 bg-gradient-to-l from-[#0A192F] via-[#D4AF37] to-[#0A192F] z-0"></div>
+
+<!-- Target 1 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-11 h-11 rounded-full bg-[#0A192F] border-2 border-[#D4AF37] text-[#F9E498] flex items-center justify-center text-lg shadow mb-2">
+                🎓
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-2 w-full flex-1">
+<p class="text-[10px] font-black text-[#996515] mb-0.5">صناع التمكين</p>
+<p contenteditable="false" class="text-[10px] text-slate-700 font-semibold leading-snug">
+                  المدربون والكوتشز والمرافقون المهنيون.
+</p>
+</div>
+</div>
+
+<!-- Target 2 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-11 h-11 rounded-full bg-[#0A192F] border-2 border-[#D4AF37] text-[#F9E498] flex items-center justify-center text-lg shadow mb-2">
+                🏢
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-2 w-full flex-1">
+<p class="text-[10px] font-black text-[#996515] mb-0.5">قيادات المؤسسات</p>
+<p contenteditable="false" class="text-[10px] text-slate-700 font-semibold leading-snug">
+                  أصحاب مراكز التدريب والمؤسسات والمهتمون بتطوير الموارد البشرية.
+</p>
+</div>
+</div>
+
+<!-- Target 3 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-11 h-11 rounded-full bg-[#0A192F] border-2 border-[#D4AF37] text-[#F9E498] flex items-center justify-center text-lg shadow mb-2">
+                🚩
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-2 w-full flex-1">
+<p class="text-[10px] font-black text-[#996515] mb-0.5">رواد الأثر</p>
+<p contenteditable="false" class="text-[10px] text-slate-700 font-semibold leading-snug">
+                  القادة والمبادرون والفاعلون في المجتمع.
+</p>
+</div>
+</div>
+
+<!-- Target 4 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-11 h-11 rounded-full bg-[#0A192F] border-2 border-[#D4AF37] text-[#F9E498] flex items-center justify-center text-lg shadow mb-2">
+                🌟
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-2 w-full flex-1">
+<p class="text-[10px] font-black text-[#996515] mb-0.5">الباحثون عن التحول</p>
+<p contenteditable="false" class="text-[10px] text-slate-700 font-semibold leading-snug">
+                  الأشخاص الراغبون في تطوير ذواتهم وتوضيح رؤيتهم ومساراتهم.
+</p>
+</div>
+</div>
+
+<!-- Target 5 -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-11 h-11 rounded-full bg-[#0A192F] border-2 border-[#D4AF37] text-[#F9E498] flex items-center justify-center text-lg shadow mb-2">
+                🔗
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-lg p-2 w-full flex-1">
+<p class="text-[10px] font-black text-[#996515] mb-0.5">بناة الشراكات</p>
+<p contenteditable="false" class="text-[10px] text-slate-700 font-semibold leading-snug">
+                  المهتمون ببناء علاقات مهنية وتبادل الخبرات واستكشاف فرص التعاون.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Standard Internal Footer -->
+<div class="bg-[#0A192F] text-white px-8 py-2.5 flex items-center justify-between text-xs border-t border-[#D4AF37]/40">
+<span>ملتقى آفاق 2026 للقيادة والريادة | البطاقة التقنية</span>
+<span class="w-6 h-6 rounded-full bg-gold-gradient text-[#061020] font-black flex items-center justify-center">4</span>
+</div>
+</section>
+
+<!-- ================================================================= -->
+<!-- PAGE 5: CHANGEMAKERS & BACK COVER [كبار المدربين والشراكات والتواصل] -->
+<!-- (Inspired by Pages 8, 9 & 10 of Reference PDF)                    -->
+<!-- ================================================================= -->
+<section id="page-5" class="a4-page bg-royal-gradient text-white">
+<!-- Top Diagonal Cut Banner (Inspired by Page 8 of Reference PDF) -->
+<div class="px-8 pt-6">
+<div class="grid grid-cols-12 gap-2 items-center bg-[#061020] rounded-2xl overflow-hidden border border-[#D4AF37]/50 shadow-lg">
+<div class="col-span-4 h-24 relative overflow-hidden diagonal-banner-left">
+<img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=500&q=80" alt="Conference Audience" class="w-full h-full object-cover opacity-75" />
+<div class="absolute inset-0 bg-gradient-to-l from-[#061020] via-transparent to-transparent"></div>
+</div>
+<div class="col-span-4 text-center py-2">
+<h2 contenteditable="false" class="text-xl font-black text-gold-gradient">6. كبار المدربين والمتدخلون</h2>
+<p class="font-eng text-[10px] text-slate-300 font-bold tracking-widest mt-0.5">KEYNOTE SPEAKERS</p>
+</div>
+<div class="col-span-4 h-24 relative overflow-hidden diagonal-banner-right">
+<img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=500&q=80" alt="Stage Microphone" class="w-full h-full object-cover opacity-75" />
+<div class="absolute inset-0 bg-gradient-to-r from-[#061020] via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+
+<div class="px-8 py-4 flex-1 flex flex-col justify-between gap-4 arabesque-bg">
+<!-- القسم الأول: شبكة كبار المدربين الأربعة (4 Circular Frames as in Page 8 of Ref PDF) -->
+<div>
+<div class="flex justify-between items-center mb-2">
+<span class="text-xs text-[#F9E498]">نخبة من كبار المدربين والخبراء من داخل وخارج الجزائر:</span>
+<span class="no-print text-[10px] text-amber-300 bg-white/10 px-2.5 py-0.5 rounded-full">
+              📷 انقر على دائرة أي مدرب لإدراج صورته الشخصية
+</span>
+</div>
+
+<div class="grid grid-cols-4 gap-4 text-center">
+<!-- Speaker 1: Adel Ech-Chibl -->
+<div class="bg-[#0A192F]/90 border border-[#D4AF37]/40 rounded-2xl p-3.5 flex flex-col items-center shadow-lg">
+<div onclick="triggerImageUpload('speaker-img-1')" class="cursor-pointer w-24 h-24 rounded-full p-1 bg-gold-gradient shadow-md mb-2.5 relative group">
+<div class="w-full h-full rounded-full overflow-hidden bg-[#061020] flex items-center justify-center">
+<img id="speaker-img-1" src="https://ui-avatars.com/api/?name=Adel+Chibl&background=0A192F&color=F9E498&size=200&bold=true" alt="الأستاذ عادل الشبل" class="w-full h-full object-cover" />
+</div>
+</div>
+<h3 contenteditable="false" class="font-black text-sm text-white">الأستاذ عادل الشبل</h3>
+<p contenteditable="false" class="font-eng text-[9px] text-[#D4AF37] font-bold mb-1.5">ADEL ECH-CHIBL</p>
+<p contenteditable="false" class="text-[10px] text-slate-300 leading-snug border-t border-slate-700/80 pt-1.5">
+                الوعي والإدراك، تنمية الشخصية، مرافقة المؤسسات وعلوم الشخصية
+</p>
+</div>
+
+<!-- Speaker 2: Dr. Amine Ferkoul -->
+<div class="bg-[#0A192F]/90 border border-[#D4AF37]/40 rounded-2xl p-3.5 flex flex-col items-center shadow-lg">
+<div onclick="triggerImageUpload('speaker-img-2')" class="cursor-pointer w-24 h-24 rounded-full p-1 bg-gold-gradient shadow-md mb-2.5 relative group">
+<div class="w-full h-full rounded-full overflow-hidden bg-[#061020] flex items-center justify-center">
+<img id="speaker-img-2" src="https://ui-avatars.com/api/?name=Amine+Ferkoul&background=0A192F&color=F9E498&size=200&bold=true" alt="الدكتور أمين فركول" class="w-full h-full object-cover" />
+</div>
+</div>
+<h3 contenteditable="false" class="font-black text-sm text-white">الدكتور أمين فركول</h3>
+<p contenteditable="false" class="font-eng text-[9px] text-[#D4AF37] font-bold mb-1.5">DR. AMINE FERKOUL</p>
+<p contenteditable="false" class="text-[10px] text-slate-300 leading-snug border-t border-slate-700/80 pt-1.5">
+                الوعي والإدراك والفلسفة
+</p>
+</div>
+
+<!-- Speaker 3: Dr. Mohamed Maimoun -->
+<div class="bg-[#0A192F]/90 border border-[#D4AF37]/40 rounded-2xl p-3.5 flex flex-col items-center shadow-lg">
+<div onclick="triggerImageUpload('speaker-img-3')" class="cursor-pointer w-24 h-24 rounded-full p-1 bg-gold-gradient shadow-md mb-2.5 relative group">
+<div class="w-full h-full rounded-full overflow-hidden bg-[#061020] flex items-center justify-center">
+<img id="speaker-img-3" src="https://ui-avatars.com/api/?name=Mohamed+Maimoun&background=0A192F&color=F9E498&size=200&bold=true" alt="الدكتور محمد مايمون" class="w-full h-full object-cover" />
+</div>
+</div>
+<h3 contenteditable="false" class="font-black text-sm text-white">الدكتور محمد مايمون</h3>
+<p contenteditable="false" class="font-eng text-[9px] text-[#D4AF37] font-bold mb-1.5">DR. MOHAMED MAIMOUN</p>
+<p contenteditable="false" class="text-[10px] text-slate-300 leading-snug border-t border-slate-700/80 pt-1.5">
+                التخطيط الاستراتيجي الشخصي والقيادة المجتمعية
+</p>
+</div>
+
+<!-- Speaker 4: Dr. Amine Es-Selmi -->
+<div class="bg-[#0A192F]/90 border border-[#D4AF37]/40 rounded-2xl p-3.5 flex flex-col items-center shadow-lg">
+<div onclick="triggerImageUpload('speaker-img-4')" class="cursor-pointer w-24 h-24 rounded-full p-1 bg-gold-gradient shadow-md mb-2.5 relative group">
+<div class="w-full h-full rounded-full overflow-hidden bg-[#061020] flex items-center justify-center">
+<img id="speaker-img-4" src="https://ui-avatars.com/api/?name=Amine+Selmi&background=0A192F&color=F9E498&size=200&bold=true" alt="الدكتور أمين السلمي" class="w-full h-full object-cover" />
+</div>
+</div>
+<h3 contenteditable="false" class="font-black text-sm text-white">الدكتور أمين السلمي</h3>
+<p contenteditable="false" class="font-eng text-[9px] text-[#D4AF37] font-bold mb-1.5">DR. AMINE ES-SELMI</p>
+<p contenteditable="false" class="text-[10px] text-slate-300 leading-snug border-t border-slate-700/80 pt-1.5">
+                التطوير المؤسساتي والذكاء الاصطناعي
+</p>
+</div>
+</div>
+
+<!-- Organizational Note -->
+<div class="mt-2.5 border border-dashed border-[#D4AF37]/60 bg-[#061020]/60 rounded-xl px-4 py-2 text-center">
+<p contenteditable="false" class="text-[11px] text-[#F9E498]">
+              • تُعلن أسماء بقية الشركاء والمتدخلين والبرنامج التفصيلي بعد استكمال الاعتمادات والتنسيق النهائي، ويُضبط ترتيب المداخلات ومددها بما يضمن جودة المحتوى وتنوع التجربة.
+</p>
+</div>
+</div>
+
+<!-- القسم الثاني: الشراكات الاستراتيجية (FORUM PARTNERSHIPS) -->
+<div class="bg-[#061020]/85 border border-[#D4AF37]/40 rounded-2xl p-4">
+<div class="flex items-center justify-between mb-1.5">
+<h3 contenteditable="false" class="text-sm font-black text-[#F9E498]">10. الشراكات الاستراتيجية وشراكات التفوق</h3>
+<span class="font-eng text-[10px] text-[#D4AF37]">FORUM PARTNERS</span>
+</div>
+<p contenteditable="false" class="text-[11px] text-slate-300 leading-relaxed mb-3">
+            يفتح الملتقى المجال لشراكات استراتيجية وشراكات تفوق تسهم في دعم التجربة وإبراز المبادرات والخدمات ذات الصلة، وفق فئات الشراكة ومزاياها المحددة في اتفاق مستقل. وتُنسق جميع المشاركات التسويقية أو التنظيمية أو المداخلات مسبقاً مع الجهة المنظمة.
+</p>
+<!-- Partner Logo Placeholders -->
+<div class="grid grid-cols-5 gap-2.5 text-center">
+<div contenteditable="false" class="py-2 px-2 rounded-lg border border-slate-700 bg-[#0A192F] text-[10px] text-slate-400 font-semibold">شريك استراتيجي 1</div>
+<div contenteditable="false" class="py-2 px-2 rounded-lg border border-slate-700 bg-[#0A192F] text-[10px] text-slate-400 font-semibold">شريك استراتيجي 2</div>
+<div contenteditable="false" class="py-2 px-2 rounded-lg border border-slate-700 bg-[#0A192F] text-[10px] text-slate-400 font-semibold">شريك تفوق 1</div>
+<div contenteditable="false" class="py-2 px-2 rounded-lg border border-slate-700 bg-[#0A192F] text-[10px] text-slate-400 font-semibold">شريك إعلامي</div>
+<div contenteditable="false" class="py-2 px-2 rounded-lg border border-slate-700 bg-[#0A192F] text-[10px] text-slate-400 font-semibold">مركز تدريبي شريك</div>
+</div>
+</div>
+
+<!-- القسم الثالث: بطاقة الهوية التنظيمية وجدول التواصل والـ CTA (كما في الصفحة 10 من المرجع + الصفحة 3 من الملف الأول) -->
+<div class="grid grid-cols-12 gap-4 items-stretch bg-[#061020] rounded-2xl p-4 border-2 border-[#D4AF37] shadow-2xl">
+<!-- Big Date & Hotel Block (Inspired by Page 10 of Ref PDF) -->
+<div class="col-span-5 flex flex-col justify-between border-l border-[#D4AF37]/30 pl-4">
+<div>
+<span class="text-[10px] text-[#F9E498] font-bold">11. معلومات تنظيمية</span>
+<h4 contenteditable="false" class="text-base font-black text-white mt-0.5">ملتقى آفاق 2026 للقيادة والريادة</h4>
+<p contenteditable="false" class="text-xs text-[#F9E498] font-bold mb-3">من الوعي... إلى صناعة المستقبل</p>
+
+<!-- Giant Date Box -->
+<div class="flex items-center gap-3 bg-[#0A192F] border border-[#D4AF37] rounded-xl p-2.5 mb-2.5">
+<div class="bg-gold-gradient text-[#061020] font-black rounded-lg px-3 py-1.5 text-center leading-tight">
+<span class="block text-lg">18-19</span>
+<span class="block text-[10px] font-eng">DEC</span>
+</div>
+<div>
+<span class="block text-xl font-black text-white tracking-widest">2026</span>
+<span contenteditable="false" class="block text-[11px] text-[#F9E498]">فندق بركات - براقي، الجزائر</span>
+<span class="block text-[10px] text-amber-400">★★★★ (فندق 4 نجوم)</span>
+</div>
+</div>
+</div>
+
+<!-- CTA Button -->
+<div class="bg-gold-gradient text-[#061020] rounded-full py-2 px-5 font-black text-sm flex items-center justify-center gap-2 shadow-lg cursor-pointer">
+<span>سجل الآن</span>
+<span class="w-5 h-5 rounded-full bg-[#061020] text-[#F9E498] flex items-center justify-center text-xs">❯</span>
+</div>
+</div>
+
+<!-- Contact Data Table (From Page 3 of File 1) -->
+<div class="col-span-7 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<h4 class="text-xs font-black text-[#F9E498]">بيانات الجهة المنظمة والتواصل الرسمي:</h4>
+<span class="no-print text-[10px] text-slate-400">(قابلة للتعبئة عند تفعيل التحرير)</span>
+</div>
+
+<div class="space-y-2 text-xs">
+<div class="flex items-center bg-[#0A192F] border border-slate-700 rounded-lg px-3 py-1.5">
+<span class="text-[#F9E498] font-bold w-36 flex-shrink-0">🏛️ الجهة المنظمة:</span>
+<span contenteditable="false" class="text-white flex-1">[اكتب اسم المؤسسة المنظمة هنا]</span>
+</div>
+<div class="flex items-center bg-[#0A192F] border border-slate-700 rounded-lg px-3 py-1.5">
+<span class="text-[#F9E498] font-bold w-36 flex-shrink-0">👤 الممثل الرسمي:</span>
+<span contenteditable="false" class="text-white flex-1">[اكتب اسم الممثل الرسمي هنا]</span>
+</div>
+<div class="flex items-center bg-[#0A192F] border border-slate-700 rounded-lg px-3 py-1.5">
+<span class="text-[#F9E498] font-bold w-36 flex-shrink-0">📞 الهاتف / واتساب:</span>
+<span contenteditable="false" class="text-white flex-1" dir="ltr">+213 XX XX XX XX</span>
+</div>
+<div class="flex items-center bg-[#0A192F] border border-slate-700 rounded-lg px-3 py-1.5">
+<span class="text-[#F9E498] font-bold w-36 flex-shrink-0">✉️ البريد الإلكتروني:</span>
+<span contenteditable="false" class="text-white flex-1" dir="ltr">contact@afaq2026.dz</span>
+</div>
+<div class="flex items-center bg-[#0A192F] border border-slate-700 rounded-lg px-3 py-1.5">
+<span class="text-[#F9E498] font-bold w-36 flex-shrink-0">🌐 صفحات التواصل:</span>
+<span contenteditable="false" class="text-white flex-1">www.afaq-forum.dz | @AfaqForum2026</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Standard Internal Footer -->
+<div class="bg-[#061020] text-white px-8 py-2.5 flex items-center justify-between text-xs border-t border-[#D4AF37]/40">
+<span>ملتقى آفاق 2026 للقيادة والريادة | من الوعي... إلى صناعة المستقبل</span>
+<span class="w-6 h-6 rounded-full bg-gold-gradient text-[#061020] font-black flex items-center justify-center">5</span>
+</div>
+</section>
+
+</main>
+
+<!-- ===================================================================== -->
+<!-- VIEW 2: STRUCTURED WIREFRAME & DESIGNER SPECIFICATION VIEW            -->
+<!-- ===================================================================== -->
+<section id="wireframeSpecContainer" class="hidden max-w-5xl mx-auto py-8 px-4 text-slate-100">
+<div class="bg-[#0A192F] border-2 border-[#D4AF37] rounded-2xl p-6 md:p-8 shadow-2xl">
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-700">
+<div>
+<span class="text-xs font-bold text-[#F9E498] uppercase tracking-wider">Content Design & Art Direction Document</span>
+<h2 class="text-2xl font-black text-white mt-1">وثيقة المخطط التصميمي التنفيذي (Wireframe Text)</h2>
+<p class="text-xs text-slate-300 mt-1">جاهزة للنسخ المباشر أو التسليم للمصمم الجرافيكي (InDesign / Illustrator)</p>
+</div>
+<button onclick="copyAllWireframe()" id="copyBtnText" class="px-4 py-2.5 rounded-xl bg-gold-gradient text-[#061020] font-black text-xs shadow-lg hover:opacity-95 transition">
+          📋 نسخ الوثيقة الكاملة
+</button>
+</div>
+
+<div id="rawWireframeContent" class="space-y-6 mt-6 text-sm leading-relaxed">
+<!-- Step 1 -->
+<div class="bg-[#061020]/90 border border-slate-700 rounded-xl p-5">
+<h3 class="text-lg font-black text-[#F9E498] mb-3 border-b border-[#D4AF37]/30 pb-2">
+            الخطوة الأولى: المحتوى المستخرج والمحسن تسويقياً وقيادياً
+</h3>
+<ul class="space-y-2.5 text-xs text-slate-200">
+<li><strong class="text-[#F9E498]">1. الرؤية:</strong> «نحو جيلٍ يقود ذاته ويصنع مستقبله»؛ الإسهام في بناء أفراد أكثر وعياً وقدرة على قيادة ذواتهم ومساراتهم، وتحويل المعرفة إلى ممارسة، والطموح إلى اتجاه، والجهد إلى أثر.</li>
+<li><strong class="text-[#F9E498]">2. الرسالة:</strong> «تجربةٌ تفاعلية متكاملة ترسم ملامح الامتياز»؛ توفير تجربة تفاعلية تجمع الخبرة والتدريب والحوار والتواصل المهني، وتمنح المشاركين خريطة طريق أولية نحو الامتياز الشخصي والمهني والمجتمعي.</li>
+<li><strong class="text-[#F9E498]">3. الأهداف الستة:</strong> (1) تعزيز الوعي بالذات وبالاختيارات والمسؤولية الشخصية. (2) تطوير مفاهيم قيادة الذات والقيادة المجتمعية وصناعة القرار. (3) ربط الرؤية والطموح بخطوات عملية قابلة للتطبيق. (4) استكشاف مفهوم الريادة بوصفها مبادرة وصناعة قيمة وأثر. (5) فتح مساحة لتبادل الخبرات وبناء علاقات وشراكات مهنية. (6) التعريف بالتدريب والكوتشينغ والمرافقة بوصفها مسارات مهنية تتطلب كفاءة وأخلاقيات وممارسة مسؤولة.</li>
+<li><strong class="text-[#F9E498]">4. المحاور الخمسة والتخصصات:</strong> (1) الوعي وقيادة الذات. (2) القيادة والامتياز الشخصي والمهني. (3) الريادة وصناعة القيمة. (4) التدريب والكوتشينغ والمرافقة كمهن. (5) من الوعي إلى صناعة المستقبل. | <em>المجالات الدقيقة:</em> الوعي والإدراك وتنمية الشخصية ومرافقة المؤسسات وعلوم الشخصية / الوعي والإدراك والفلسفة / التخطيط الاستراتيجي الشخصي والقيادة المجتمعية / التطوير المؤسساتي والذكاء الاصطناعي.</li>
+<li><strong class="text-[#F9E498]">5. كبار المدربين والمتدخلون:</strong> الأستاذ عادل الشبل | الدكتور أمين فركول | الدكتور محمد مايمون | الدكتور أمين السلمي.</li>
+</ul>
+</div>
+
+<!-- Step 2 -->
+<div class="bg-[#061020]/90 border border-slate-700 rounded-xl p-5">
+<h3 class="text-lg font-black text-[#F9E498] mb-3 border-b border-[#D4AF37]/30 pb-2">
+            الخطوة الثانية: القواعد البصرية والهندسية المستلهمة من الملف المرجعي
+</h3>
+<div class="grid md:grid-cols-2 gap-4 text-xs text-slate-200">
+<div class="bg-[#0A192F] p-3.5 rounded-lg border border-slate-800">
+<p class="font-bold text-[#F9E498] mb-1">🎨 لوحة الألوان (Color Palette):</p>
+<p>الكحلي الملكي العميق <code>#0A192F</code> و<code>#061020</code>، الذهبي الفاخر المتدرج <code>#D4AF37</code> إلى <code>#F9E498</code>، والأبيض النقي للخلفيات الداخلية المريحة للقراءة.</p>
+</div>
+<div class="bg-[#0A192F] p-3.5 rounded-lg border border-slate-800">
+<p class="font-bold text-[#F9E498] mb-1">📐 الهندسة البصرية (Visual Layout):</p>
+<p>البطاقات ذات الدوائر المتداخلة (Overlapping Circular Badges) للمحاور، الصور البانورامية المشطوفة بزاوية 45 درجة، وتقسيم الفقرات إلى بطاقات مرقمة (1، 2).</p>
+</div>
+</div>
+</div>
+
+<!-- Step 3 -->
+<div class="bg-[#061020]/90 border border-slate-700 rounded-xl p-5">
+<h3 class="text-lg font-black text-[#F9E498] mb-3 border-b border-[#D4AF37]/30 pb-2">
+            الخطوة الثالثة: توزيع الصفحات الخمس (Page-by-Page Breakdown)
+</h3>
+<div class="space-y-3 text-xs text-slate-200">
+<p><strong class="text-amber-300">[صفحة 1 - الغلاف]:</strong> الترويسة المزدوجة يميناً ويساراً + الشعار ثلاثي الأبعاد + عنوان الملتقى والشريط الذهبي المائل للشعار اللفظي + شارة (البطاقة التقنية للملتقى / TECHNICAL SHEET FOR THE FORUM) + قوس اللوجستيات الثلاثي (18-19 ديسمبر 2026، فندق بركات براقي 4 نجوم، ملتقى حضوري) + شريط الكلمات المفتاحية.</p>
+<p><strong class="text-amber-300">[صفحة 2 - الفلسفة]:</strong> الشريط الجانبي الكحلي الأيمن للمعلومات السريعة + بطاقتي التعريف المرقمتين (① منصة التحول، ② المفهوم الشامل للريادة) + بطاقتي الرؤية والرسالة متجاورتين مع أيقونة البوصلة وأيقونة خريطة الطريق + كولاج الصور الثلاثي لفندق بركات في الأسفل.</p>
+<p><strong class="text-amber-300">[صفحة 3 - الاستراتيجية]:</strong> شبكة الأهداف الاستراتيجية الستة (Grid 3x2) مرقمة من 01 إلى 06 + الصندوق الكحلي المزدوج لـ (النتائج المنتظرة للمشارك) مقابل (طبيعة التجربة) + إطار الخلاصة الفلسفية المزدوج في أسفل الصفحة.</p>
+<p><strong class="text-amber-300">[صفحة 4 - خريطة الملتقى]:</strong> إنفوجرافيك المحاور الخمسة بنمط البطاقات ذات الدائرة المتداخلة + شريط الكبسولات الأربع للتخصصات الدقيقة + إنفوجرافيك الدوائر الخمس المتصلة للفئات المستهدفة.</p>
+<p><strong class="text-amber-300">[صفحة 5 - صناع التغيير والتواصل]:</strong> البانر العلوي المشطوف لقاعة المؤتمر والميكروفون + شبكة الدوائر الذهبية الأربع لكبار المدربين (أ. عادل الشبل، د. أمين فركول، د. محمد مايمون، د. أمين السلمي) + قسم الشراكات الاستراتيجية + كتلة التاريخ الضخمة وجدول التواصل الرسمي وزر «سجل الآن».</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+    let isEditMode = false;
+    let currentImageTargetId = null;
+
+    function switchView(mode) {
+      const visualContainer = document.getElementById('visualBrochureContainer');
+      const wireframeContainer = document.getElementById('wireframeSpecContainer');
+      const btnVisual = document.getElementById('btnViewVisual');
+      const btnWireframe = document.getElementById('btnViewWireframe');
+
+      if (mode === 'visual') {
+        visualContainer.classList.remove('hidden');
+        wireframeContainer.classList.add('hidden');
+        btnVisual.className = 'px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-gold-gradient text-[#061020] shadow';
+        btnWireframe.className = 'px-3 py-1.5 rounded-md text-xs font-bold transition-all text-slate-300 hover:text-white';
+      } else {
+        visualContainer.classList.add('hidden');
+        wireframeContainer.classList.remove('hidden');
+        btnWireframe.className = 'px-3 py-1.5 rounded-md text-xs font-bold transition-all bg-gold-gradient text-[#061020] shadow';
+        btnVisual.className = 'px-3 py-1.5 rounded-md text-xs font-bold transition-all text-slate-300 hover:text-white';
+      }
+    }
+
+    function jumpToPage(pageId) {
+      switchView('visual');
+      const el = document.getElementById(pageId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function toggleEditMode() {
+      isEditMode = !isEditMode;
+      const body = document.body;
+      const editables = document.querySelectorAll('[contenteditable]');
+      const editLabel = document.getElementById('editLabel');
+      const btnEditToggle = document.getElementById('btnEditToggle');
+
+      if (isEditMode) {
+        body.classList.add('editable-active');
+        editables.forEach(el => el.setAttribute('contenteditable', 'true'));
+        editLabel.textContent = 'حفظ وإغلاق التحرير';
+        btnEditToggle.classList.add('bg-[#D4AF37]/25');
+      } else {
+        body.classList.remove('editable-active');
+        editables.forEach(el => el.setAttribute('contenteditable', 'false'));
+        editLabel.textContent = 'تفعيل تحرير النصوص';
+        btnEditToggle.classList.remove('bg-[#D4AF37]/25');
+      }
+    }
+
+    function triggerImageUpload(imgId) {
+      currentImageTargetId = imgId;
+      document.getElementById('imageUploader').click();
+    }
+
+    function handleImageUpload(event) {
+      const file = event.target.files[0];
+      if (file && currentImageTargetId) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const imgEl = document.getElementById(currentImageTargetId);
+          if (imgEl) {
+            imgEl.src = e.target.result;
+          }
+        };
+        reader.readAsDataURL(file);
+      }
+      event.target.value = '';
+    }
+
+    function copyAllWireframe() {
+      const content = document.getElementById('rawWireframeContent').innerText;
+      navigator.clipboard.writeText(content).then(() => {
+        const btn = document.getElementById('copyBtnText');
+        const original = btn.innerHTML;
+        btn.innerHTML = '✅ تم النسخ بنجاح!';
+        setTimeout(() => { btn.innerHTML = original; }, 2000);
+      });
+    }
+</script>
+</body>
+</html>
+```
